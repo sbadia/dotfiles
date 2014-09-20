@@ -1,0 +1,35 @@
+[mentors]
+fqdn = mentors.debian.net
+incoming = /upload
+method = http
+allow_unsigned_uploads = 0
+progress_indicator = 2
+# Allow uploads for UNRELEASED packages
+allowed_distributions = .*
+
+[ftp-mentors]
+fqdn = mentors.debian.net
+login = anonymous
+progress_indicator = 2
+passive_ftp = 1
+incoming = /
+method = ftp
+allow_unsigned_uploads = 0
+# Allow uploads for UNRELEASED packages
+allowed_distributions = .*
+
+[contrail]
+fqdn = ppa.launchpad.net
+progress_indicator = 2
+passive_ftp = 1
+method = ftp
+incoming = ~sbadia/contrail/ubuntu/
+login = anonymous
+allow_unsigned_uploads = 0
+
+[sebian]
+login = debupload
+fqdn = apt.sebian.fr
+method = scp
+incoming = /home/debupload/incoming
+allow_dcut = 1
