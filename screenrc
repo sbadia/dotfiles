@@ -1,0 +1,11 @@
+startup_message off
+deflogin on
+vbell off
+vbell_msg " !!! "
+hardstatus off
+hardstatus string "%h%? users: %u%?"
+caption always "%{+u wk}%?%-w%?%{+b rk}/%n:%t\%{-b wk}%?%+w%?%{-u}%=%{+b wk}%H%{gk} %c %{yk}%d/%m/%Y%-0=%{wk}"
+termcapinfo xterm ti@:te@
+
+bindkey -k k8 prev
+bindkey -k k9 next
