@@ -1,0 +1,4 @@
+#text/html;     links %s; nametemplate=%s.html
+text/calendar;	iceowl %s
+text/html;	iceweasel %s
+text/html;      links -dump %s; nametemplate=%s.html; copiousoutput
