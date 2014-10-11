@@ -4,6 +4,14 @@
 
 theme = {}
 
+theme.dir = os.getenv('HOME') .. "/.config/awesome/themes/sbadia-default"
+
+theme.menu_awesome_icon             = theme.dir .."/icons/awesome.png"
+theme.awesome_icon = "/usr/share/awesome/themes/zenburn/awesome-icon.png"
+theme.submenu_icon                  = theme.dir .."/icons/submenu.png"
+theme.taglist_squares_sel           = theme.dir .. "/icons/square_sel.png"
+theme.taglist_squares_unsel         = theme.dir .. "/icons/square_unsel.png"
+
 -- http://wmii.suckless.org/themes
 -- WMII_FOCUSCOLORS=('#A0FF00' '#686363' '#8c8c8c')
 -- WMII_BACKGROUND='#333333'
@@ -42,8 +50,8 @@ theme.border_marked = "#ff0000"
 --theme.taglist_bg_focus = "#ff0000"
 
 -- Display the taglist squares
-theme.taglist_squares_sel   = "/usr/share/awesome/themes/default/taglist/squarefw.png"
-theme.taglist_squares_unsel = "/usr/share/awesome/themes/default/taglist/squarew.png"
+-- theme.taglist_squares_sel   = "/usr/share/awesome/themes/default/taglist/squarefw.png"
+-- theme.taglist_squares_unsel = "/usr/share/awesome/themes/default/taglist/squarew.png"
 
 theme.tasklist_floating_icon = "/usr/share/awesome/themes/default/tasklist/floating.png"
 
@@ -52,7 +60,6 @@ theme.mouse_finder_color = "#CC9393"
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
-theme.menu_submenu_icon = "/usr/share/awesome/themes/default/submenu.png"
 theme.menu_height = "15"
 theme.menu_width  = "100"
 
@@ -119,8 +126,6 @@ theme.layout_spiral     = "/usr/share/awesome/themes/zenburn/layouts/spiral.png"
 theme.layout_dwindle    = "/usr/share/awesome/themes/zenburn/layouts/dwindle.png"
 
 
---theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
-theme.awesome_icon = "/usr/share/awesome/themes/zenburn/awesome-icon.png"
 
 return theme
 -- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80
