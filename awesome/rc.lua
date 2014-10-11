@@ -260,6 +260,7 @@ function toggle_titlebar(c)
 end
 function handle_titlebar(c)
    if awful.client.floating.get(c) then
+      -- TODO
       if not all_titlebars[c] and not no_titlebar_apps[c.class] and not no_titlebar_apps[c.instance] then
          titlebar_add(c)
       end
@@ -740,7 +741,7 @@ client.connect_signal("manage", function (c, startup)
     end
 
     -- Add a titlebar
-    handle_titlebar(c)
+    -- handle_titlebar(c)
     c:connect_signal("property::floating", handle_titlebar)
 end)
 
