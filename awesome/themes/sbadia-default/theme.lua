@@ -4,36 +4,6 @@
 
 theme = {}
 
---theme.font          = "sans 8"
---theme.bg_normal     = "#222222"
---theme.bg_focus      = "#535d6c"
---theme.bg_urgent     = "#ff0000"
---theme.bg_minimize   = "#444444"
---theme.fg_normal     = "#aaaaaa"
---theme.fg_focus      = "#ffffff"
---theme.fg_urgent     = "#ffffff"
---theme.fg_minimize   = "#ffffff"
---theme.border_width  = "1"
---theme.border_normal = "#000000"
---theme.border_focus  = "#535d6c"
---theme.border_marked = "#91231c"
-
----------------------------
---  Arch awesome theme   --
----------------------------
---theme.font = "sans 8"
---theme.bg_normal = "#000000"
---theme.bg_focus = "#ffffff"
---theme.bg_urgent = "#ff0000"
---theme.fg_normal = "#1793d1"
---theme.fg_focus = "#1793d1"
---theme.fg_urgent = "#ffffff"
---theme.border_width = "1"
---theme.border_normal = "#ffffff"
---theme.border_focus = "#000000"
---theme.border_marked = "#ff0000"
-
--- Wmii
 -- http://wmii.suckless.org/themes
 -- WMII_FOCUSCOLORS=('#A0FF00' '#686363' '#8c8c8c')
 -- WMII_BACKGROUND='#333333'
@@ -76,6 +46,8 @@ theme.taglist_squares_sel   = "/usr/share/awesome/themes/default/taglist/squaref
 theme.taglist_squares_unsel = "/usr/share/awesome/themes/default/taglist/squarew.png"
 
 theme.tasklist_floating_icon = "/usr/share/awesome/themes/default/tasklist/floating.png"
+
+theme.mouse_finder_color = "#CC9393"
 
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
