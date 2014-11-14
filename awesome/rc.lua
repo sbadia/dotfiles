@@ -355,21 +355,21 @@ cpu_widgets = wibox.widget.textbox()
 vicious.register(cpu_widgets, vicious.widgets.cpufreq, '$5 $2GHz', 20, 'cpu0')
 
 -- Redshift widget
-icons_dir = require("lain.helpers").icons_dir
-local rs_on = icons_dir .. "/redshift/redshift_on.png"
-local rs_off = icons_dir .. "/redshift/redshift_off.png"
-local redshift = lain.widgets.contrib.redshift
-redshift_widgets = wibox.widget.imagebox(rs_on)
-redshift:attach(
-    redshift_widgets,
-    function ()
-        if redshift:is_active() then
-            redshift_widgets:set_image(rs_on)
-        else
-            redshift_widgets:set_image(rs_off)
-        end
-    end
-)
+-- icons_dir = require("lain.helpers").icons_dir
+-- local rs_on = icons_dir .. "/redshift/redshift_on.png"
+-- local rs_off = icons_dir .. "/redshift/redshift_off.png"
+-- local redshift = lain.widgets.contrib.redshift
+-- redshift_widgets = wibox.widget.imagebox(rs_on)
+-- redshift:attach(
+--     redshift_widgets,
+--     function ()
+--         if redshift:is_active() then
+--             redshift_widgets:set_image(rs_on)
+--         else
+--             redshift_widgets:set_image(rs_off)
+--         end
+--     end
+-- )
 
 -- Temp
 temp_icon = wibox.widget.imagebox(beautiful.widget_temp)
@@ -485,7 +485,8 @@ for s = 1, screen.count() do
     left_layout:add(mypromptbox[s])
 
     local my_right_widgets = _.concat(
-       pomodoro.icon_widget, redshift_widgets, separator,
+       --pomodoro.icon_widget, redshift_widgets, separator,
+       pomodoro.icon_widget, separator,
        load_widgets, separator, cpu_widgets,
        separator, mem_widgets, separator,
        temp_icon, temp_widgets, separator, bat_widget, vol_widget
