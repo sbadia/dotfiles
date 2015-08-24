@@ -183,7 +183,7 @@ bindsym Print exec "scrot -u"
 bindsym XF86LaunchA exec "i3lock -i /home/sbadia/wallpaper/degradevert.png -e -d"
 bindsym XF86AudioMicMute exec "amixer -q sset Capture toggle"
 bindsym XF86MonBrightnessDown exec "xbacklight -10"
-bindsym Xo85MonBrightnessUp exec "xbacklight +10"
+bindsym XF85MonBrightnessUp exec "xbacklight +10"
 bindsym XF86Display exec "arandr"
 bindsym XF86WLAN exec "wifi_togle.sh"
 # XF86Tools
