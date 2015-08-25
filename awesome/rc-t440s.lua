@@ -617,7 +617,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "space", function () awful.layout.inc(layouts,  1) end),
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
     awful.key({ }, "Print",   function () awful.util.spawn ("scrot -u") end),
-    awful.key({ }, "XF86LaunchA",   function () awful.util.spawn ("i3lock -d -c 000000") end),
+    awful.key({ }, "XF86LaunchA",   function () awful.util.spawn ("i3lock -i /home/sbadia/wallpaper/degradevert.png -e -d") end),
     awful.key({ }, "XF86AudioMicMute",   function () awful.util.spawn ("amixer -q sset Capture toggle") end),
     awful.key({ }, "XF86MonBrightnessDown",   function () awful.util.spawn ("xbacklight -10") end),
     awful.key({ }, "XF86MonBrightnessUp",   function () awful.util.spawn ("xbacklight +10") end),
@@ -631,14 +631,15 @@ globalkeys = awful.util.table.join(
     awful.key({ }, "XF86AudioMute",    function () awful.util.spawn("amixer -q sset Master toggle") end),
 
     -- Perso
-    awful.key({ modkey }, "c", function () awful.util.spawn("xfce4-popup-clipman") end),
-    awful.key({ modkey }, "g", function () awful.util.spawn("gajim") end),
+    awful.key({ modkey }, "e", revelation),
 
     -- Prompt
-    -- Anciennement "r"
-    awful.key({ modkey }, "e", revelation),
     awful.key({ modkey }, "p", function () mypromptbox[mouse.screen]:run() end),
-    awful.key({ modkey }, "d", function () awful.util.spawn('dmenu_run') end),
+    awful.key({ modkey }, "z", function () awful.util.spawn('passmenu') end),
+    awful.key({ modkey }, "g", function () awful.util.spawn("passmenu_gitoyen") end),
+    awful.key({ modkey }, "l", function () awful.util.spawn("passmenu_ldn") end),
+    awful.key({ modkey }, "r", function () awful.util.spawn('rofi -show run -font "snap 10" -hlbg "#000000" -hlfg "#ffb964" -o 85') end),
+    awful.key({ modkey }, "c", function () awful.util.spawn('rofi -show ssh -font "snap 10" -hlbg "#000000" -hlfg "#ffb964" -o 85') end),
 
     awful.key({ modkey }, "x",
               function ()
@@ -809,13 +810,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- {{{
 -- Gestion des programmes au lancement
 os.execute("nitrogen --restore &")
--- os.execute("system-config-printer-applet &")
-os.execute("setxkbmap fr -variant oss")
-os.execute("xrdb -load ~/.Xdefaults")
-os.execute("xmodmap ~/.Xmodmap")
--- os.execute("mail-notification &")
-os.execute("wmname LG3D")
--- os.execute("kerneloops-applet &")
 
 -- disable startup-notification globally
 local oldspawn = awful.util.spawn
