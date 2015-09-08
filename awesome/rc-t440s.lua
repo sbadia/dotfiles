@@ -637,8 +637,8 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "p", function () mypromptbox[mouse.screen]:run() end),
     awful.key({ modkey }, "z", function () awful.util.spawn('passmenu') end),
     awful.key({ modkey }, "g", function () awful.util.spawn("passmenu_gitoyen") end),
-    awful.key({ modkey }, "l", function () awful.util.spawn("passmenu_ldn") end),
-    awful.key({ modkey }, "r", function () awful.util.spawn('rofi -show run -font "snap 10" -hlbg "#000000" -hlfg "#ffb964" -o 85') end),
+    awful.key({ modkey }, "r", function () awful.util.spawn("passmenu_ldn") end),
+    awful.key({ modkey }, "d", function () awful.util.spawn('rofi -show run -font "snap 10" -hlbg "#000000" -hlfg "#ffb964" -o 85') end),
     awful.key({ modkey }, "c", function () awful.util.spawn('rofi -show ssh -font "snap 10" -hlbg "#000000" -hlfg "#ffb964" -o 85') end),
 
     awful.key({ modkey }, "x",
