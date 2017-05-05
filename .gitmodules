@@ -1,9 +1,9 @@
 [submodule "awesome/lain"]
 	path = awesome/lain
 	url = git://github.com/copycat-killer/lain.git
-[submodule "awesome/pomodoro"]
-	path = awesome/pomodoro
-	url = git://github.com/nikolavp/awesome-pomodoro.git
 [submodule "awesome/revelation"]
 	path = awesome/revelation
 	url = git://github.com/guotsuan/awesome-revelation.git
+[submodule "awesome/vicious"]
+	path = awesome/vicious
+	url = github.com:Mic92/vicious.git
